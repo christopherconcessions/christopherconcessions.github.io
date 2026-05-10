@@ -1,35 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christopher Concessions LLC</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Logo" class="logo">
-            </div>
-            <ul>
-                <li><a href="#" onclick="loadContent('home')">Home</a></li>
-                <li><a href="#" onclick="loadContent('menu')">Menu</a></li>
-                <li><a href="#" onclick="loadContent('about')">About Us</a></li>
-                <li><a href="#" onclick="loadContent('events')">Events & Bookings</a></li>
-                <li><a href="#" onclick="loadContent('contact')">Contact</a></li>
-            </ul>
-        </nav>
+    <meta
+      name="description"
+      content="Christopher Concessions LLC serves gyros, sausages, hot dogs, fries, specialty fries, and beverages across Southeast Michigan."
+    >
+    <link rel="preconnect" href="https://christopherconcessions.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Christopher Concessions home">
+        <img src="images/logo.png" alt="Christopher Concessions LLC logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <main id="main-content">
-        <!-- Dynamic content will be loaded here -->
+    <main id="home">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="images/MCFair.jpg" alt="">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Food truck catering, festivals, private events</p>
+          <h1>Christopher Concessions LLC</h1>
+          <p>
+            Fresh gyros, sausages, fries, specialty fries, hot dogs, and cold
+            drinks served from a bright, event-ready concession trailer.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Book the Truck</a>
+            <a class="button secondary" href="#menu">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Highlights">
+        <div>
+          <strong>Fair-ready setup</strong>
+          <span>Built for festivals, school nights, markets, and community events.</span>
+        </div>
+        <div>
+          <strong>Greek-inspired favorites</strong>
+          <span>Gyros, specialty fries, sausages, hot dogs, and cold drinks.</span>
+        </div>
+        <div>
+          <strong>Easy booking</strong>
+          <span>Serving Southeast Michigan. Send the date, location, guest count, and event style.</span>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Menu preview</p>
+          <h2>Menu favorites</h2>
+          <p>
+            A focused lineup of fair favorites, easy lunch picks, and event-friendly
+            staples that work for busy lines and hungry crowds.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="photo-placeholder">
+              <span>Add gyro photo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Gyros</h3>
+              <ul class="menu-list">
+                <li><strong>Gyro</strong><span>Gyro meat, tzatziki, onion, tomato</span></li>
+                <li><strong>Chicken Gyro</strong><span>Chicken, tzatziki, onion, tomato</span></li>
+                <li><strong>Ultimate Gyro</strong><span>Chicken, gyro meat, feta, tzatziki, onion, tomato</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="photo-placeholder accent-red">
+              <span>Add sausage photo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Sausage & Hot Dogs</h3>
+              <ul class="menu-list">
+                <li><strong>Italian Sausage</strong><span>Served with peppers and onions</span></li>
+                <li><strong>Polish Sausage</strong><span>Served with peppers and onions</span></li>
+                <li><strong>Jumbo Hot Dog</strong><span>A classic concession favorite</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="photo-placeholder accent-gold">
+              <span>Add fries photo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>French Fries</h3>
+              <ul class="menu-list compact">
+                <li><strong>Small Fries</strong></li>
+                <li><strong>Large Fries</strong></li>
+                <li><strong>Bucket of Fries</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="photo-placeholder accent-green">
+              <span>Add specialty fries photo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Specialty Fries</h3>
+              <ul class="menu-list">
+                <li><strong>Gyro Fries</strong><span>French fries, gyro meat, tzatziki, onion, tomato</span></li>
+                <li><strong>Greek Fries</strong><span>French fries, feta cheese, tzatziki, onion, tomato</span></li>
+                <li><strong>Ultimate Fries</strong><span>Chicken or gyro meat, feta, tzatziki, onion, tomato</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="photo-placeholder accent-red">
+              <span>Add beverage photo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Beverages</h3>
+              <ul class="menu-list compact">
+                <li><strong>Fountain Drinks</strong></li>
+                <li><strong>Canned Drinks</strong></li>
+                <li><strong>Bottled Water</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="menu-card menu-note">
+            <div class="menu-card-body">
+              <h3>Photos Coming Soon</h3>
+              <p>
+                Once your menu photos are ready, each category can be swapped from
+                placeholder panels to real item images.
+              </p>
+              <a href="#contact">Ask about availability</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="events">
+        <div class="split-copy">
+          <p class="eyebrow">Events & bookings</p>
+          <h2>Bring the truck to your next crowd.</h2>
+          <p>
+            Christopher Concessions is a strong fit for fairs, festivals, company lunches,
+            school events, graduations, private parties, and community fundraisers across
+            Southeast Michigan.
+          </p>
+        </div>
+        <div class="booking-panel">
+          <h3>Booking details to send</h3>
+          <ul>
+            <li>Event date and service time</li>
+            <li>Address or venue name</li>
+            <li>Estimated guest count</li>
+            <li>Preferred menu items</li>
+            <li>Power, parking, and setup notes</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About us</p>
+          <h2>Simple, fast, familiar food for real events.</h2>
+          <p>
+            Christopher Concessions LLC brings classic concession energy to gatherings
+            that need dependable service, recognizable favorites, and a setup guests can
+            spot from across the fairgrounds.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Book Christopher Concessions</h2>
+          <p>
+            Share your event date, location, guest count, and preferred menu items so
+            we can help plan service.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="tel:+17346522804">
+            <span>Phone</span>
+            <strong>(734) 652-2804</strong>
+          </a>
+          <a class="contact-card" href="mailto:christopherconcessions@gmail.com">
+            <span>Email</span>
+            <strong>christopherconcessions@gmail.com</strong>
+          </a>
+          <div class="contact-card">
+            <span>Service Area</span>
+            <strong>Southeast Michigan</strong>
+          </div>
+          <div class="contact-card">
+            <span>Menu</span>
+            <strong>Gyros, fries, sausages, hot dogs, drinks</strong>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>© 2024 Christopher Concessions LLC. All rights reserved.</p>
+    <footer class="site-footer">
+      <span>&copy; 2026 Christopher Concessions LLC</span>
+      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
